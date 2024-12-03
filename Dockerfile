@@ -15,7 +15,6 @@ RUN apt-get update \
     pandoc \
     make \
     cmake \
-    adduser \
   && . /etc/environment
 
 # install some packges  
