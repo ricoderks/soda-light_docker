@@ -1,4 +1,5 @@
 FROM rocker/r-base:4.4.1
+
 LABEL maintainer="<Rico Derks r.j.e.derks@lumc.nl">
 
 ## install some packages I need (e.g. from bioconductor)
@@ -14,6 +15,7 @@ RUN apt-get update \
     pandoc \
     make \
     cmake \
+    adduser \
   && . /etc/environment
 
 # install some packges  
